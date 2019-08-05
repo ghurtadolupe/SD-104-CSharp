@@ -7,7 +7,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("I Anyone Out There?");
+            Console.WriteLine("Is Anyone Out There?");
             Console.ReadLine();
         }
     }
