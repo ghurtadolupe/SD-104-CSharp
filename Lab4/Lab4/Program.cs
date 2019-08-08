@@ -9,7 +9,7 @@ namespace Lab4
             //declarations
             int nLargest;
             int nSmallest;
-            int nCurrent:
+            int nCurrent;
             string strEntry;
 
             //first integer
@@ -24,9 +24,25 @@ namespace Lab4
             {
                 nCurrent = Convert.ToInt32(strEntry);
 
+                //check to see if input should replace largest or smallest
+                if(nCurrent > nLargest)
+                {
+                    nLargest = nCurrent;
+                }
+                
+                else if(nCurrent < nSmallest)
+                {
+                    nSmallest = nCurrent;
+                }
+
                 Console.WriteLine("Enter another integer or Q to Quit");
                 strEntry = Console.ReadLine();
             }
+
+            Console.WriteLine("The largest value you entered was " + nLargest + ".");
+            Console.WriteLine("The smallest you entered was " + nSmallest + ".");
+
+            Console.ReadLine();
 
 
 
